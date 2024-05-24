@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORGANIZATOR</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="decoration left">
+        <img src="images/HomePage6.jpg">
+        <img src="images/HomePage2.jpg">
+        <img src="images/HomePage3.jpg">
+    </div>
+    <div class="decoration right">
+        <img src="images/HomePage1.jpg">
+        <img src="images/HomePage4.jpg">
+        <img src="images/HomePage5.jpg">
+    </div>
+    
+    <nav>
+        <ul>
+            <li><a href="#">Pocetna</a></li>
+            <li>
+                <a href="#">Organizuj</a>
+                <ul>
+                    <li><a href="#">Za skolu</a></li>
+                    <li><a href="#">Za posao</a></li>
+                    <li><a href="#">Svakodnevno</a></li>
+                </ul>
+            </li>
+            <li><a href="#">O nama</a></li>
+            <li><a href="#">Kontaktiraj nas</a></li>
+            <li class="auth">
+                <a href="#" class="login-btn">Uloguj se</a>
+                <ul class="dropdown">
+                    <li><a href="#" class="signup-btn">Kreiraj nalog</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <h2>Dobrodošli u Organizator</h2>
+        <h4>Transformišemo haos u red</h4>
+        <p>U Organizatoru verujemo da je dobro organizovan život temelj produktivnosti, kreativnosti i mira. Bilo da upravljate užurbanim domaćinstvom, vodite posao ili jednostavno želite da pojednostavite svoje svakodnevne zadatke, Organizator je tu da vam pomogne da postignete svoje ciljeve s lakoćom i efikasnošću.</p>
+        
+        <h4>Naše usluge</h4>
+        <p>- <strong>Lično planiranje:</strong> Od dnevnih rasporeda do dugoročnih ciljeva, naši alati vam pomažu da ostanete na pravom putu.</p>
+        <p>- <strong>Upravljanje zadacima:</strong> Razdvojite projekte na upravljive zadatke i postavite prioritete.</p>
+        <p>- <strong>Digitalna organizacija:</strong> Održavajte svoj digitalni život urednim uz naša rešenja za upravljanje fajlovima.</p>
+        <p>- <strong>Organizacija doma:</strong> Saveti i proizvodi za uklanjanje nereda i organizaciju vašeg životnog prostora.</p>
+        <p>- <strong>Poslovna rešenja:</strong> Optimizujte radne tokove i poboljšajte produktivnost uz naše poslovne organizacione alate.</p>
+
+        <h4>Zašto izabrati Organizator?</h4>
+        <p>- <strong>Jednostavni alati:</strong> Intuitivni i jednostavni interfejsi dizajnirani za sve vaše uređaje.</p>
+        <p>- <strong>Prilagodljivost:</strong> Prilagodite naše alate svojim jedinstvenim potrebama i preferencijama.</p>
+        <p>- <strong>Stručni saveti:</strong> Pristup bogatstvu resursa, vodiča i stručnih saveta o efektivnoj organizaciji.</p>
+        <p>- <strong>Podrška zajednice:</strong> Pridružite se zajednici istomišljenika i podelite svoje iskustvo organizovanja.</p>
+
+        <h4>Počnite danas</h4>
+        <p>Istražite našu ponudu proizvoda i usluga dizajniranih da vam pomognu da preuzmete kontrolu nad svojim životom i maksimalno iskoristite svoje vreme. Registrujte se za besplatan nalog i počnite da uživate u prednostima dobro organizovanog života uz Organizator.</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Organizator</p>
+    </footer>
+
+    <div class="overlay"></div>
+
+    <!-- Login Dialog -->
+    <div class="login-dialog dialog">
+        <div class="close-btn">&times;</div>
+        <h2>Login</h2>
+        <form action="login.php" method="post">
+            <label for="login-email">Email:</label>
+            <input type="email" id="login-email" name="email" required>
+            <label for="login-password">Šifra:</label>
+            <input type="password" id="login-password" name="password" required>
+            <button type="submit">Prijava</button>
+        </form>
+    </div>
+
+    <!-- Signup Dialog -->
+    <div class="signup-dialog dialog">
+        <div class="close-btn">&times;</div>
+        <h2>Sign Up</h2>
+        <form action="signup.php" method="post">
+            <label for="signup-name">Ime:</label>
+            <input type="text" id="signup-name" name="first_name" required>
+            <label for="signup-lastname">Prezime:</label>
+            <input type="text" id="signup-lastname" name="last_name" required>
+            <label for="signup-email">Email:</label>
+            <input type="email" id="signup-email" name="email" required>
+            <label for="signup-password">Šifra:</label>
+            <input type="password" id="signup-password" name="password" required>
+            <button type="submit">Registracija</button>
+        </form>
+    </div>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
